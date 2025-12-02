@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { Star, ShoppingBag, Zap, Heart, ArrowRight, Shield, Truck } from "lucide-react";
-import { Products } from "@/app/_data/products";
+import { Products } from "@/data/products";
 
 export default async function ProductsPage() {
 
@@ -43,12 +43,12 @@ export default async function ProductsPage() {
                     <span
                       key={index}
                       className={`px-3 py-1 text-xs font-semibold rounded-full ${tag === "Best Seller"
-                          ? "bg-yellow-100 text-yellow-800"
-                          : tag === "New"
-                            ? "bg-green-100 text-green-800"
-                            : tag === "Sale"
-                              ? "bg-red-100 text-red-800"
-                              : "bg-blue-100 text-blue-800"
+                        ? "bg-yellow-100 text-yellow-800"
+                        : tag === "New"
+                          ? "bg-green-100 text-green-800"
+                          : tag === "Sale"
+                            ? "bg-red-100 text-red-800"
+                            : "bg-blue-100 text-blue-800"
                         }`}
                     >
                       {tag}

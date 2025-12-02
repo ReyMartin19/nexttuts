@@ -1,6 +1,6 @@
 import React from "react";
 // 1. Import the centralized data
-import { Products } from "@/app/_data/products";
+import { Products } from "@/data/products";
 import { notFound } from "next/navigation"; // Used for 404 handling
 import { Star, Check, ArrowLeft } from "lucide-react";
 import Link from "next/link"; // For the back button
@@ -98,8 +98,8 @@ export default async function ProductDetailPage(props: Props) {
               <button
                 disabled={!product.inStock}
                 className={`w-full px-8 py-4 rounded-xl font-bold text-white transition-all transform hover:-translate-y-1 ${product.inStock
-                    ? "bg-purple-600 hover:bg-purple-700 shadow-lg shadow-purple-500/30"
-                    : "bg-gray-600 cursor-not-allowed"
+                  ? "bg-purple-600 hover:bg-purple-700 shadow-lg shadow-purple-500/30"
+                  : "bg-gray-600 cursor-not-allowed"
                   }`}
               >
                 {product.inStock ? "Add to Cart" : "Out of Stock"}
