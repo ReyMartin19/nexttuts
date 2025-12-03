@@ -93,10 +93,17 @@ export default async function ProductsPage() {
                 <div className="flex gap-3">
                   <Link
                     href={`/products/${product.id}`}
-                    className="flex-1 px-4 py-3 bg-gray-900 text-white rounded-lg font-medium hover:bg-gray-800 transition-colors flex items-center justify-center gap-2 group/btn"
+                    className="flex-2 px-4 py-3 bg-gray-900 text-white rounded-lg font-medium hover:bg-gray-800 transition-colors flex items-center justify-center gap-2 group/btn"
                   >
                     View Details
                     <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                  </Link>
+
+                  <Link
+                    href={`/cart/${product.id}`}
+                    className="flex-1 py-3 bg-gray-900 text-white rounded-lg font-medium hover:bg-gray-800 transition-colors flex items-center justify-center gap-2 group/btn"
+                  >
+                    Cart
                   </Link>
                 </div>
               </div>

@@ -31,7 +31,7 @@ function AppSidebar({ collapsed, onToggle }: SidebarProps) {
           >
             <div className={clsx("flex items-center gap-2", collapsed ? "justify-center" : "")}
             >
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-400" />
+              <div className="w-8 h-8 rounded-lg bg-linear-to-r from-blue-500 to-cyan-400" />
               {!collapsed && (
                 <span className="text-lg font-semibold text-gray-200">ONStore</span>
               )}
